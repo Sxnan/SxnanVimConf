@@ -1,0 +1,12 @@
+set nocompatible
+set backspace=indent,eol,start
+set autoindent
+set ruler
+set showcmd
+set incsearch
+set relativenumber
+set number
+set scrolloff=20
+set sidescroll=1
+set sidescrolloff=25
+set nowrap
