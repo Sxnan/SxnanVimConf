@@ -7,9 +7,9 @@
 1. Install Plugin
 
    
-   1. Chane directory ```cd ~```  
-   1. Open .vimrc with vim ```vim .vimrc```  
-   1. Install plugin ```:PlugInstall```
+   Chane directory ```cd ~```  
+   Open .vimrc with vim ```vim .vimrc```  
+   Install plugin ```:PlugInstall```
 
 1. Install Cmake
 
