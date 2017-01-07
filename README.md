@@ -4,9 +4,12 @@
 
    ``` ./download.py ```
 
+1. Copy files to home direcoty
+
+   ``` cp .vimrc .ycm_extra_conf.py ~ ```
+
 1. Install Plugin
 
-   
    Chane directory ```cd ~```  
    Open .vimrc with vim ```vim .vimrc```  
    Install plugin ```:PlugInstall```
