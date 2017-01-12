@@ -2,11 +2,15 @@
 
 1. Run 
 
-   ``` ./download.py ```
+   ``` 
+   ./download.py 
+   ```
 
 1. Copy files to home direcoty
 
-   ``` cp .vimrc .ycm_extra_conf.py ~ ```
+   ``` 
+   cp .vimrc .ycm_extra_conf.py ~ 
+   ```
 
 1. Install Plugin
 
@@ -16,11 +20,15 @@
 
 1. Install Cmake
 
-    ``` sudo apt-get install build-essential cmake ```
+    ``` 
+    sudo apt-get install build-essential cmake 
+    ```
 
 1. Python Header
 
-   ``` sudo apt-get install python-dev python3-dev ```
+   ``` 
+   sudo apt-get install python-dev python3-dev 
+   ```
 
 1. Compiling YCM with semantic support for C-family Languages
 
