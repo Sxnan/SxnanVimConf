@@ -9,7 +9,6 @@ set number
 set scrolloff=20
 set sidescroll=1
 set sidescrolloff=25
-set nowrap
 
 let g:ycm_always_populate_location_list = 1
 let mapleader = "\<Space>"
@@ -25,6 +24,28 @@ nnoremap <leader>w :w<CR>
 
 " Map <learder>q to quit
 nnoremap <leader>q :q<CR>
+
+" Pair completion"
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
+
+inoremap < <><Left>
+inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
+inoremap << <
+
+inoremap [ []<Left>
+inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+inoremap [[ [
+
+inoremap ( ()<Left>
+inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+inoremap (( (
+
+inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
+
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
 
 call plug#begin('~/.vim/plugged')
 
