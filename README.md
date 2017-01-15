@@ -17,6 +17,12 @@
    Chane directory ```cd ~```  
    Open .vimrc with vim ```vim .vimrc```  
    Install plugin ```:PlugInstall```
+   
+1. Put mycolor.vim to ~/.vim/color
+
+   ```
+   cp mycolor.vim ~/.vim/color
+   ```
 
 1. Install Cmake
 
