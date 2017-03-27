@@ -12,8 +12,6 @@ set scrolloff=20
 set sidescroll=1
 set sidescrolloff=25
 
-" Set color scheme"
-colorscheme mycolor
 
 highlight colorcolumn ctermbg=7
 
