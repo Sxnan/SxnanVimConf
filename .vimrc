@@ -2,7 +2,6 @@
 " Vim setting
 set nocompatible
 set backspace=indent,eol,start
-set autoindent
 set ruler
 set showcmd
 set incsearch
@@ -41,6 +40,13 @@ let g:pymode_options_colorcolumn = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" tab
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim key map
 "
 " Map the leader to space"
@@ -64,9 +70,9 @@ inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
 
-inoremap < <><Left>
-inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
-inoremap << <
+" inoremap < <><Left>
+" inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
+" inoremap << <
 
 inoremap [ []<Left>
 inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
@@ -90,5 +96,6 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'python-mode/python-mode', {'for': 'python'}
 Plug 'Valloric/YouCompleteMe'
+Plug 'mattn/emmet-vim', {'for': ['html', 'css']}
 
 call plug#end()
